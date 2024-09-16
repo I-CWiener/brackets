@@ -11,14 +11,14 @@ module.exports = function check(str, bracketsConfig) {
   const brackets = new Map(bracketsConfig);
 console.log(brackets);
 
-  for (const bracket of str) {
+  for (const br of str) {
       console.log(bracket);
-    if (bracket === brackets.get(arr[arr.length - 1])) {
+    if (br === brackets.get(arr[arr.length - 1])) {
       arr.pop();
       console.log(arr)
     } else {
-      arr.push(bracket);
-       console.log(arr);
+      arr.push(br);
+      console.log(arr);
     }
   }
 console.log(arr.length === 0);
